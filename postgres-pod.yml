@@ -10,5 +10,8 @@ spec:
   containers:
     - name: postgres
       image: postgres:9.4
+      env: 
+        - name: POSTGRES_PASSWORD
+          value: VMware1!
       ports:
         - containerPort: 5432
